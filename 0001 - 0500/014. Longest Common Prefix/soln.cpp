@@ -11,7 +11,6 @@ public:
         if (strs.empty()) {
             return "";
         }
-
         // Iterate over the characters in the first string
         for (int i = 0; i < strs[0].length(); i++) {
             char c = strs[0][i];
@@ -24,7 +23,6 @@ public:
                 }
             }
         }
-
         // Return the entire first string as the common prefix
         return strs[0];
     }
