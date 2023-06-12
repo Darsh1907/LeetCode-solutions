@@ -8,13 +8,10 @@ class Solution {
 public:
     string longestCommonPrefix(vector<string>& strs) {
         // Base case: If the input vector is empty, return an empty string
-        if (strs.empty()) {
-            return "";
-        }
+        if (strs.empty()) return "";
         // Iterate over the characters in the first string
         for (int i = 0; i < strs[0].length(); i++) {
             char c = strs[0][i];
-
             // Check if the character is common in all strings
             for (int j = 1; j < strs.size(); j++) {
                 if (i >= strs[j].length() || strs[j][i] != c) {
