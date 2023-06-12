@@ -22,7 +22,6 @@ char *longestCommonPrefix(char **strs, int strsSize) {
     // Iterate over characters in the first string
     for (int i = 0; i < minLen; i++) {
         char currentChar = strs[0][i];
-
         // Compare the current character with corresponding characters in other strings
         for (int j = 1; j < strsSize; j++) {
             if (strs[j][i] != currentChar) {
@@ -32,10 +31,8 @@ char *longestCommonPrefix(char **strs, int strsSize) {
                 return result;
             }
         }
-        
         prefixLen++;
     }
-
     char *result = (char *)malloc((prefixLen + 1) * sizeof(char));
     strncpy(result, strs[0], prefixLen);
     result[prefixLen] = '\0';
