@@ -1,3 +1,9 @@
+#include <iostream>
+#include <vector>
+#include <unordered_map>
+
+using namespace std;
+
 class Solution {
 public:
     vector<int> topKFrequent(vector<int>& nums, int k) {
@@ -23,7 +29,22 @@ public:
                 result.insert(result.end(), buckets[i].begin(), buckets[i].end());
             }
         }
-        
         return result;
     }
 };
+
+int main() {
+    Solution solution;
+    vector<int> nums = {1, 1, 1, 2, 2, 3};
+    int k = 2;
+    
+    vector<int> result = solution.topKFrequent(nums, k);
+    
+    cout << "Top " << k << " frequent elements: ";
+    for (int i = 0; i < result.size(); i++) {
+        cout << result[i] << " ";
+    }
+    cout << endl;
+    
+    return 0;
+}
