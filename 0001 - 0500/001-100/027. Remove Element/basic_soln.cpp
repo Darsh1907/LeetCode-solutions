@@ -6,6 +6,11 @@
 // vector, while pointer j keeps track of the position where the next non-val element should be placed. 
 // By copying non-val elements to the correct position, you can achieve the desired result.
 
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
 class Solution {
 public:
     int removeElement(vector<int>& nums, int val) {
@@ -19,3 +24,21 @@ public:
         return j; // j represents the new length of the modified vector
     }
 };
+
+int main() {
+    // Example usage
+    vector<int> nums = {3, 2, 2, 3, 1, 4, 2, 3};
+    int val = 2;
+    
+    Solution solution;
+    int length = solution.removeElement(nums, val);
+    
+    cout << "New length: " << length << endl;
+    cout << "Modified array: ";
+    for (int i = 0; i < length; i++) {
+        cout << nums[i] << " ";
+    }
+    cout << endl;
+    
+    return 0;
+}
