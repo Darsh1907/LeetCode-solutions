@@ -42,3 +42,22 @@ if __name__ == "__main__":
     result = solution.gcdOfStrings(str1, str2)
     print("Greatest Common Divisor of Strings:", result)
 ```
+
+## JavaScript Implementation
+### Class: Solution
+Member Functions
+1. gcd(a, b): This function implements the Euclidean algorithm to find the greatest common divisor of two integers.
+2. gcdOfStrings(str1, str2): This function takes two strings as input and returns the greatest common divisor of the strings. It concatenates the strings in different orders and checks if they are equal. If they are not equal, it returns an empty string. Otherwise, it computes the greatest common divisor of the lengths of the strings and returns the substring of str1 from index 0 to gcd_len.
+
+### Example Usage
+```
+const solution = new Solution();
+const str1 = "ABABAB";
+const str2 = "ABAB";
+const result = solution.gcdOfStrings(str1, str2);
+console.log("Greatest Common Divisor of Strings:", result);
+const str3 = "ABCABC";
+const str4 = "ABC";
+const result2 = solution.gcdOfStrings(str3, str4);
+console.log("Greatest Common Divisor of Strings:", result2);
+```
