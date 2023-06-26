@@ -1,3 +1,10 @@
+#include <iostream>
+#include <vector>
+#include <string>
+#include <set>
+
+using namespace std;
+
 class Solution {
 public:
     int numUniqueEmails(vector<string>& emails) {
@@ -26,3 +33,17 @@ public:
         return emails.size();
     }
 };
+
+int main() {
+    // Example usage
+    Solution solution;
+    vector<string> emails = {
+        "test.email+alex@leetcode.com",
+        "test.e.mail+bob.cathy@leetcode.com",
+        "testemail+david@lee.tcode.com"
+    };
+    int uniqueEmails = solution.numUniqueEmails(emails);
+    cout << "Number of unique emails: " << uniqueEmails << endl;
+    
+    return 0;
+}
