@@ -24,7 +24,6 @@ public:
                     emails[i].erase(j,(k-j));
                 }
                 if(flag==1) break;
-                k=0;
             }
         }
         set <string> str(emails.begin(),emails.end());
