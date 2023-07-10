@@ -1,6 +1,5 @@
 #include <iostream>
 #include <vector>
-
 using namespace std;
 
 class Solution {
@@ -21,11 +20,9 @@ public:
 
 int main() {
     Solution solution;
-
     // Test your implementation
     int numRows = 7;
     vector<vector<int>> result = solution.generate(numRows);
-
     // Print the result
     for (const auto& row : result) {
         for (const auto& num : row) {
@@ -33,6 +30,5 @@ int main() {
         }
         cout << endl;
     }
-
     return 0;
 }
