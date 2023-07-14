@@ -18,6 +18,5 @@ int main() {
     int n = 1;
     int canPlace = canPlaceFlowers(flowerbed, flowerbedSize, n);
     printf("Can place flowers: %s\n", canPlace ? "Yes" : "No");
-    
     return 0;
 }
