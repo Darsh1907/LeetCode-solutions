@@ -1,3 +1,5 @@
+// Solution using two pointer approach
+
 int maxArea(int* height, int heightSize){
     int i = 0;
     int j = heightSize-1;
