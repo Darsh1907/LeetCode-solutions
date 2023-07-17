@@ -39,20 +39,16 @@ char* mergeAlternately(char* word1, char* word2) {
 }
 
 int main() {
-
     // Test case 1
     char word1[] = "abc";
     char word2[] = "def";
     char* result1 = mergeAlternately(word1, word2);
     printf("Result 1: %s\n", result1);
-
     // Test case 2
     char word3[] = "abcd";
     char word4[] = "efgh";
     char* result2 = mergeAlternately(word3, word4);
     printf("Result 2: %s\n", result2);
-
     // Add more test cases as needed
-
     return 0;
 }
