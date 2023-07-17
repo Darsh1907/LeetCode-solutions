@@ -3,9 +3,6 @@ public:
     int longestConsecutive(vector<int>& nums) {
         if(nums.empty()) return 0;
 
-        // autoip = unique(nums.begin(), nums.end());
-        // nums.resize(distance(nums.begin(), ip));
-
         sort(nums.begin(), nums.end());
 
         int max = 1;
