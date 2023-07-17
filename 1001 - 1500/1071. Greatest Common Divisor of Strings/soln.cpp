@@ -21,4 +21,4 @@ public:
         int gcd_len = gcd(str1.size(), str2.size());
         return str1.substr(0, gcd_len);
     }
-};
+}; 
