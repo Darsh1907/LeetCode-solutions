@@ -1,6 +1,5 @@
 #include <iostream>
 #include <string>
-
 using namespace std;
 
 class Solution {
@@ -16,8 +15,7 @@ public:
 
         if(s[i] || t[i]) return false;
 
-        for(i=0; i<256; i++)
-            if(count[i]) return false;
+        for(i=0; i<256; i++) if(count[i]) return false;
 
         return true;
     }
@@ -25,14 +23,9 @@ public:
 
 int main() {
     Solution solution;
-
     string s = "anagram";
     string t = "nagaram";
-
-    if (solution.isAnagram(s, t))
-        cout << "The strings are anagrams." << endl;
-    else
-        cout << "The strings are not anagrams." << endl;
-
+    if (solution.isAnagram(s, t)) cout << "The strings are anagrams." << endl;
+    else cout << "The strings are not anagrams." << endl;
     return 0;
 }
