@@ -1,7 +1,6 @@
 #include <iostream>
 #include <vector>
 #include <unordered_map>
-
 using namespace std;
 
 class Solution {
@@ -34,7 +33,6 @@ int main() {
     } else {
         cout << "No valid indices found." << endl;
     }
-
     // Test case 2
     vector<int> nums2 = {3, 2, 4};
     int target2 = 6;
@@ -46,6 +44,5 @@ int main() {
     } else {
         cout << "No valid indices found." << endl;
     }
-
     return 0;
 }
