@@ -1,7 +1,8 @@
 /**
  * @param {string} s
  * @return {string}
- */
+*/
+
 var reverseWords = function(s) {
     // Remove leading and trailing spaces
     s = s.trim();
