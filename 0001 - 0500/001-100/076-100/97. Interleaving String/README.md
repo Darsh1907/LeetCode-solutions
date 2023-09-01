@@ -13,6 +13,7 @@ substrings respectively, such that:
 **Note:** a + b is the concatenation of strings a and b.
 
 **Example 1:**
+![interleave](https://github.com/Darsh1907/LeetCode-solutions/assets/118650412/b87ebd7d-00b3-4408-806d-7342f187b795)
 ```
 Input: s1 = "aabcc", s2 = "dbbca", s3 = "aadbbcbcac"
 Output: true
