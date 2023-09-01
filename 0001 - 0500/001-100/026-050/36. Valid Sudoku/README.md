@@ -12,7 +12,9 @@ A Sudoku board (partially filled) could be valid but is not necessarily solvable
 Only the filled cells need to be validated according to the mentioned rules.
  
 
-**Example 1:**
+**Example 1:** <br>
+![Sudoku-by-L2G-20050714 svg](https://github.com/Darsh1907/LeetCode-solutions/assets/118650412/904c4535-85b2-4de6-adac-437761296ee6)
+<br>
 ```
 Input: board = 
 [["5","3",".",".","7",".",".",".","."]
