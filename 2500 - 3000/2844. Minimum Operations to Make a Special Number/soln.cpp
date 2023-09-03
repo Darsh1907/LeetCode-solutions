@@ -2,7 +2,7 @@ class Solution {
 public:
     int minimumOperations(string num) {
 
-        // A number is divisible by 25 is the last two digits are divisible by 25 i.e, '00', '25', '50', '75'. 
+        // A number is divisible by 25 if the last two digits are divisible by 25 i.e, '00', '25', '50', '75'. 
 
         bool fivefound = false;
         bool zerofound = false;
