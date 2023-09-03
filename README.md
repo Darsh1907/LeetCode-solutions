@@ -5,6 +5,7 @@ Solutions to the Leet Code questions I solve for practice.
 TODO:
 <br> <br>
 36. Valid Sudoku <br>
+62. Unique Paths <br>
 97. Interleaving String <br>
 168. Excel Sheet Column Title <br>
 424. Longest Repeating Character Replacement <br>
