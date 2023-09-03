@@ -6,7 +6,6 @@ An array of distinct positive integers is called a k-avoiding array if there doe
 
 Return the minimum possible sum of a k-avoiding array of length n.
 
-
 Example 1:
 ```
 Input: n = 5, k = 4
