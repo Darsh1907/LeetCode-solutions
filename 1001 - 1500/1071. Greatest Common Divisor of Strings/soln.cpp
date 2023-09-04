@@ -12,10 +12,10 @@ public:
     }
 
     string gcdOfStrings(string str1, string str2) {
-        if(str1+str2!=str2+str1)
-            // If the concatenation of str1 and str2 is not equal to the concatenation of str2 and str1,
-            // then there is no common divisor, so return an empty string
-            return "";
+
+        // If the concatenation of str1 and str2 is not equal to the concatenation of str2 and str1,
+        // then there is no common divisor, so return an empty string
+        if(str1+str2!=str2+str1) return "";
 
         // Find the greatest common divisor of the lengths of str1 and str2
         int gcd_len = gcd(str1.size(), str2.size());
