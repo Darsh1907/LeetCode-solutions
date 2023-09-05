@@ -23,7 +23,7 @@ Explanation: After calling your function, the input array is modified to: [1,2,3
 0 <= arr[i] <= 9
 ```
 
-**gpt.cpp explanation:**
+## gpt.cpp explanation:
 
 To solve this problem, we can follow these steps: <br>
 
