@@ -12,6 +12,7 @@ TODO:
 168. Excel Sheet Column Title <br>
 424. Longest Repeating Character Replacement <br>
 2827. Number of Beautiful Integers in the Range <br>
+941. Valid Mountain Array <br>
 
 <br><br>
 
