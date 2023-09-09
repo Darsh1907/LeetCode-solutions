@@ -1,6 +1,6 @@
 # LeetCode-solutions
 <br>
-Solutions to the Leet Code questions I solve for practice.<br>
+Solutions to the Leet Code questions I solve for practice.<br><br>
 TODO:
 <br>
 36. Valid Sudoku <br>
