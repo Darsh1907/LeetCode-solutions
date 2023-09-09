@@ -1,11 +1,8 @@
 # LeetCode-solutions
 <br>
-Solutions to the Leet Code questions I solve for practice.
-
-<br>
-
+Solutions to the Leet Code questions I solve for practice.<br>
 TODO:
-<br> <br>
+<br>
 36. Valid Sudoku <br>
 62. Unique Paths <br>
 97. Interleaving String <br>
@@ -13,9 +10,7 @@ TODO:
 424. Longest Repeating Character Replacement <br>
 2827. Number of Beautiful Integers in the Range <br>
 941. Valid Mountain Array <br>
-
 <br>
-
 TO REVISE:
-<br> <br>
+<br>
 15. 3Sum
