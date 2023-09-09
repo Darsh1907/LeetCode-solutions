@@ -2,7 +2,7 @@
 <br>
 Solutions to the Leet Code questions I solve for practice.
 
-<br> <br>
+<br>
 
 TODO:
 <br> <br>
@@ -14,7 +14,7 @@ TODO:
 2827. Number of Beautiful Integers in the Range <br>
 941. Valid Mountain Array <br>
 
-<br><br>
+<br>
 
 TO REVISE:
 <br> <br>
