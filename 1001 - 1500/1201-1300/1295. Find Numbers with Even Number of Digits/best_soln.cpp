@@ -10,7 +10,6 @@ public:
             }
             if (d % 2 == 0) ++k;
         }
-
         return k;
     }
 };
