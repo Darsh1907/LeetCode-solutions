@@ -5,13 +5,10 @@ public:
         vector<int> ans(n);
         int maxVal = arr[n-1];
         for(int i=n-2;i>=0;i--){
-            if(maxVal<arr[i+1]){
-                maxVal=arr[i+1];
-            }
+            if(maxVal<arr[i+1]) maxVal=arr[i+1];
             ans[i]=maxVal;
         }
         ans[n-1] = -1;
-        return ans;
-        
+        return ans; 
     }
 };

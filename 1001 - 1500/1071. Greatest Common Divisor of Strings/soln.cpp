@@ -1,6 +1,5 @@
 class Solution {
 public:
-
     int gcd(int a, int b){
         // Euclidean algorithm to find the greatest common divisor
         while(b){
