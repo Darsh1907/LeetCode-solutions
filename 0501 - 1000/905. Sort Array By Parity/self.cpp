@@ -7,9 +7,8 @@ public:
             if(nums[i]%2==0) even.push_back(nums[i]);
             else odd.push_back(nums[i]);
         }
-        for(int i=0; i<odd.size(); i++){
+        for(int i=0; i<odd.size(); i++)
             even.push_back(odd[i]);
-        }
         return even;
     }
 };

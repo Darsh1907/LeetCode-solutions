@@ -4,9 +4,7 @@ bool validMountainArray(int* arr, int arrSize){
     int i=0;
     while(i<arrSize-1) {
         if(arr[i]==arr[i+1]) return false;
-        if(increase) {
-            if(arr[i]>arr[i+1]) increase=false;
-        }
+        if(increase) if(arr[i]>arr[i+1]) increase=false;
         else if(arr[i]<arr[i+1]) return false;
         i++;
     }

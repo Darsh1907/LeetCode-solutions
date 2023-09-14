@@ -7,7 +7,7 @@ public:
         
         long long result = 0;
         
-        while(size<n){
+        while(size<n) {
             if(s.find(target-num) == s.end()){
                 s.insert(num);
                 result = result+num;

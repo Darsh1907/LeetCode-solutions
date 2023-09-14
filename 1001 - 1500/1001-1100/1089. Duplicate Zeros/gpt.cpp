@@ -5,9 +5,7 @@ public:
         int zeros = 0;
 
         // Count the number of zeros in the original array
-        for (int num : arr) {
-            if (num == 0) zeros++;
-        }
+        for(int num : arr) if(num == 0) zeros++;
 
         int lastIndex = n + zeros - 1; // Calculate the index of the last element after duplication
 

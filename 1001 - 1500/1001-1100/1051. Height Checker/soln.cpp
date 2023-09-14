@@ -4,9 +4,8 @@ public:
         vector<int> temp = heights;
         sort(temp.begin(), temp.end());
         int count = 0;
-        for(int i=0; i<heights.size(); i++){
+        for(int i=0; i<heights.size(); i++)
             if(heights[i]!=temp[i]) count++;
-        }
         return count;
     }
 };

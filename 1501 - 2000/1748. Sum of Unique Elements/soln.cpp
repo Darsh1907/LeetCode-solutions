@@ -8,9 +8,8 @@ public:
             else umap[nums[i]]++;
         }
         unordered_map<int, int>::iterator itr;
-        for(itr = umap.begin(); itr!=umap.end(); itr++){
+        for(itr = umap.begin(); itr!=umap.end(); itr++)
             if(itr->second == 1) result=result+(itr->first);
-        }
         return result;
     }
 };

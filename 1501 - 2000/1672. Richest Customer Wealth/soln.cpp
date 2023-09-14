@@ -5,9 +5,8 @@ public:
         int max = 0;
         for(int i=0; i<accounts.size(); i++){
             temp = 0;
-            for(int j=0; j<accounts[i].size(); j++){
+            for(int j=0; j<accounts[i].size(); j++)
                 temp = temp + accounts[i][j];
-            }
             if(temp>max) max=temp;
         }
         return max;
