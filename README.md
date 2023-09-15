@@ -3,7 +3,6 @@
 Solutions to the Leet Code questions I solve for practice.<br><br>
 TODO:
 <br>
-36. Valid Sudoku <br>
 62. Unique Paths <br>
 97. Interleaving String <br>
 168. Excel Sheet Column Title <br>
