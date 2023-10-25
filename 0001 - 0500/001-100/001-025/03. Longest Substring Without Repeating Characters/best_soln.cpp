@@ -10,7 +10,7 @@ public:
             if(count[s[j]] == 0){
                 size++;
                 count[s[j]] += 1;
-                if(size > ans) ans = size;
+                if(size>ans) ans = size;
             }
             else if(count[s[j]] == 1){
                 count[s[j]] += 1;
