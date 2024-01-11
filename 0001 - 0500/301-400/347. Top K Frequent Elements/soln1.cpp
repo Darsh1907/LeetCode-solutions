@@ -7,8 +7,7 @@ public:
             m[num]++;
         }
 
-        // now we have a hash map of frequenceis
-        // so create a priority queue
+        // now we have a hash map of frequenceis so create a priority queue
         priority_queue<pair<int, int>> q;
         for(auto [key, val] : m) {
             q.push(pair(val, key));
