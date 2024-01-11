@@ -9,7 +9,7 @@ int lower_pivot(int* nums, int numsSize) {
             e = mid;
         mid = s + (e - s) / 2;
     }
-    return s;
+    return s; // Can return e as well
 }
 
 int vanilla_bin_search(int* nums, int s, int e, int target) {
