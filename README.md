@@ -11,6 +11,6 @@ TODO:
 <br>
 TO REVISE:
 <br>
-15. 3Sum
-242. Valid Anagram
-1089. Duplicate Zeros
+15. 3Sum <br>
+242. Valid Anagram <br>
+1089. Duplicate Zeros <br>
