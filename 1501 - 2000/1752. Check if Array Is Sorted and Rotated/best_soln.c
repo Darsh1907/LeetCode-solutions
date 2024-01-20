@@ -1,6 +1,10 @@
 #include<stdio.h>
 #include <stdbool.h>
 
+// Logic is that there maximum only one such pair such that
+// the previous number is greater than the next number in case of a rotated sorted array 
+// (including the end positions)
+
 bool check(int* nums, int numsSize) {
     int count = 0;
     for(int i=1; i<numsSize; i++){
