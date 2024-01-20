@@ -4,8 +4,7 @@ public:
         int n=nums.size();
         k = k%n;
         vector<int> res = nums;
-        for(int i=0;i<n;i++)
-            res[(i+k)%n]=nums[i];
+        for(int i=0;i<n;i++) res[(i+k)%n]=nums[i];
         nums=res;
     }
 };
