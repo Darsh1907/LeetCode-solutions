@@ -1,3 +1,5 @@
+#include<stdio.h>
+
 int lower_pivot(int* nums, int numsSize) {
     int s = 0;
     int e = numsSize - 1;
@@ -31,4 +33,20 @@ int search(int* nums, int numsSize, int target) {
         return vanilla_bin_search(nums, low_pivot, numsSize-1, target);  
     else
         return vanilla_bin_search(nums, 0, low_pivot-1, target);
+}
+
+int main(){
+    int arr1[7] = {4,5,6,7,0,1,2};
+    int target1 = 0;
+
+    int arr2[7] = {4,5,6,7,0,1,2};
+    int target2 = 3;
+
+    int arr3[1] = {1};
+    int target3 = 0;
+
+    printf("%d\n", search(arr1, 7, target1));
+    printf("%d\n", lower_pivot(arr1, 7));
+    printf("%d\n", search(arr1, 7, target2));
+    printf("%d\n", search(arr1, 1, target3)); 
 }
