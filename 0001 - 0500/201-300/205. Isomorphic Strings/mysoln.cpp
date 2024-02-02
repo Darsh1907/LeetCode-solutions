@@ -11,8 +11,7 @@ public:
                 charMapST[c1] = c2;
                 charMapTS[c2] = c1;
             } 
-            else
-                if (charMapST[c1] != c2 || charMapTS[c2] != c1) return false;
+            else if (charMapST[c1] != c2 || charMapTS[c2] != c1) return false;
         }
         return true;
     }
