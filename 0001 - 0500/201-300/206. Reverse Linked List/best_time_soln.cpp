@@ -8,6 +8,7 @@ struct ListNode {
     ListNode(int x, ListNode *next) : val(x), next(next) {}
 };
 */
+
 class Solution {
 public:
     ListNode* reverseList(ListNode* head) {
