@@ -1,6 +1,7 @@
+// Simple Binary Search approach
+
 bool allocate(int* nums, int numsSize, int k, int mid) {
-    int kcount=1;
-    int ksum=0;
+    int kcount=1, ksum=0;
     for(int i=0; i<numsSize; i++) {
         if(ksum+nums[i] <= mid) ksum+=nums[i];
         else {
@@ -13,9 +14,7 @@ bool allocate(int* nums, int numsSize, int k, int mid) {
 }
 
 int splitArray(int* nums, int numsSize, int k) {
-    int ans = -1;
-    int s = 0;
-    int e = 0;
+    int ans = -1, s=0, e=0;
     for(int i=0; i<numsSize; i++) e+=nums[i];
     int mid=s+(e-s)/2;
     while(s<=e) {
@@ -24,7 +23,7 @@ int splitArray(int* nums, int numsSize, int k) {
             e=mid-1;
         }
         else s=mid+1;
-        mid=s+(e-s)/2;
+        mid = s+(e-s)/2;
     }
     return ans;
 }
