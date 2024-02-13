@@ -4,10 +4,11 @@ public:
         int i=0;
         int j=nums.size()-1;
         while(i<j){
-            if(nums[i]+nums[j]>target) j--;
-            else if(nums[i]+nums[j]<target) i++;
-            else if(nums[i]+nums[j]==target) return {i+1, j+1};
+            int sum = nums[i]+nums[j];
+            if(sum>target) j--;
+            else if(sum<target) i++;
+            else if(sum==target) return {i+1, j+1};
         }
-        return {0};
+        return {-1, -1};
     }
 };
