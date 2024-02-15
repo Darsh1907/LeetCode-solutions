@@ -13,9 +13,10 @@ public:
         unordered_set<int> s;
         s.insert(n);
         while(calcSumSq(n)!=1){
-            if(s.find(calcSumSq(n)) == s.end()) {
-                s.insert(calcSumSq(n));
-                n = calcSumSq(n);
+            int temp = calcSumSq(n);
+            if(s.find(temp) == s.end()) {
+                s.insert(temp);
+                n = temp;
             }
             else return false;
         }
