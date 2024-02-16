@@ -19,37 +19,29 @@ int peakElement(MountainArray& mountainArr, int s, int e) {
 }
 
 int BS_for_left(int target, MountainArray& mountainArr, int s, int e) {
-    int ele = -1;
     int mid;
     int mountainArr_mid;
     while (e >= s){
         mid = s + (e-s)/2;
         mountainArr_mid = mountainArr.get(mid);
-        if(mountainArr_mid == target){
-            ele = mid;
-            e = mid-1;
-        }
+        if(mountainArr_mid == target) return mid;
         else if (mountainArr_mid > target) e = mid -1;
         else s = mid + 1;
     }
-    return ele;
+    return -1;
 }
 
 int BS_for_right(int target, MountainArray& mountainArr, int s, int e) {
-    int ele = -1;
     int mid;
     int mountainArr_mid;
     while (e >= s){
         mid = s + (e-s)/2;
         mountainArr_mid = mountainArr.get(mid);
-        if(mountainArr_mid == target){
-            ele = mid;
-            s = mid+1;
-        }
+        if(mountainArr_mid == target) return mid;
         else if (mountainArr_mid > target) s = mid + 1;
         else e = mid -1;
     }
-    return ele;
+    return -1;
 }
 
 class Solution {
