@@ -26,5 +26,5 @@ int countDigitOne(int n) {
 Complexity analysis
 
 - Time complexity: O(log10(n)).
-- No of iterations equal to the number of digits in n which is log10(n).
+- - No of iterations equal to the number of digits in n which is log10(n).
 - Space complexity: O(1) space required.
