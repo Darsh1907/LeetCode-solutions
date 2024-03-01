@@ -4,11 +4,9 @@ char* maximumOddBinaryNumber(char* s){
         if(s[i]=='1') one_count++;
         s[i]='0';
     }
-    int i=0; 
-    while(one_count>1){
+    for(int i=0; one_count>1; i++){
         s[i]='1';
         one_count--;
-        i++;
     }
     s[strlen(s)-1] = '1';
     return s;
