@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <set>
 
 using namespace std;
 
@@ -8,15 +9,10 @@ public:
     string reverseVowels(string s) {
         int left = 0;
         int right = s.length() - 1;
-        string vowels = "aeiouAEIOU";
-
+        set<char> vowels({'a', 'A', 'e', 'E', 'i', 'I', 'O', 'o', 'U', 'u'});
         while (left < right) {
-            while (left < right && vowels.find(s[left]) == string::npos) {
-                left++;
-            }
-            while (left < right && vowels.find(s[right]) == string::npos) {
-                right--;
-            }
+            while(left<right && vowels.find(s[left])==vowels.end()) left++;
+            while(left<right && vowels.find(s[right])==vowels.end()) right--;
             if (left < right) {
                 swap(s[left], s[right]);
                 left++;
