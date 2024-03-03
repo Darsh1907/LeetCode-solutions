@@ -1,3 +1,6 @@
+// Strivers video is available for this question.
+// https://www.youtube.com/watch?v=0e4bZaP3MDI&t=8s
+
 class Solution {
 public:
     int count = 0;
