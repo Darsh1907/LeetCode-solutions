@@ -11,17 +11,27 @@ Recall that arr is a mountain array if and only if:
 ![Image](https://assets.leetcode.com/uploads/2019/10/20/hint_valid_mountain_array.png)
 
 Example 1:
-> Input: arr = [2,1]
-> Output: false
+
+```
+Input: arr = [2,1]
+Output: false
+```
 
 Example 2:
-> Input: arr = [3,5,5]
-> Output: false
+
+```
+Input: arr = [3,5,5]
+Output: false
+```
 
 Example 3:
-> Input: arr = [0,3,2,1]
-> Output: true
+
+```
+Input: arr = [0,3,2,1]
+Output: true
+```
 
 Constraints:
-- 1 <= arr.length <= 104
-- 0 <= arr[i] <= 104
+
+- `1 <= arr.length <= 104`
+- `0 <= arr[i] <= 104`
