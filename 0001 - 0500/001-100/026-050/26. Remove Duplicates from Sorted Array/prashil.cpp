@@ -10,13 +10,10 @@ public:
         int i=0;
         vector<int> result;
         int n;
-        while(i<length)
-        {
+        while(i<length) {
             n=nums[i];
             result.push_back(n);
-            while(i!=nums.size()-1 && nums[i]==nums[i+1]){
-                i++;
-            }
+            while(i!=nums.size()-1 && nums[i]==nums[i+1]) i++;
             i++;
         }
         nums.clear();
