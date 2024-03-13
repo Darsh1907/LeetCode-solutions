@@ -36,8 +36,3 @@ Explanation: It can be proved that no such integer exist.
 **Constraints:**
 
 - `1 <= n <= 1000`
-
-
-## Solution:
-
-![alt text](image.png)
