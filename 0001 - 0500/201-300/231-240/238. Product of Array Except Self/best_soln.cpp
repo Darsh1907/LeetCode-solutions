@@ -1,3 +1,6 @@
+// Refer NeetCode video for intuition behind this code:
+// https://www.youtube.com/watch?v=bNvIQI2wAjk
+
 class Solution {
 public:
     vector<int> productExceptSelf(vector<int>& nums) {
