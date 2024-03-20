@@ -8,13 +8,13 @@
 
 struct ListNode* reverse(struct ListNode* head, int k, int times){
     //base call
-    if(times==0 || head==NULL) return head;
+    if(times==0) return head;
     // reverse first k node
     struct ListNode* prev = NULL;
     struct ListNode* curr = head;
     struct ListNode* after = NULL;
     int count = 0;
-    while(curr!=NULL && count<k){
+    while(count<k){
         after = curr->next;
         curr->next = prev;
         prev = curr;
