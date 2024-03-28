@@ -6,10 +6,10 @@
 // twoPos - This will hold the index where we will push any 2s that we may encounter. This will be initialised to n - 1, where n is the size of the array.
 
 // We’ll iterate through the array using the current pointer. Every element is either 0, 1 or 2 so let’s see what we’ll be doing in each of these cases:
-// If arr[current] = 0 - In this case, we need to push the element towards the front of the array.
+// If arr[current]=0 - In this case, we need to push the element towards the front of the array.
 // To do that we can swap arr[current] and arr[zeroPos], then we will increase both current and zeroPos by 1.
-// If arr[current] = 1 - In this case, we will just increase the current by 1, since we are only concerned with push 0s to the front and 2s to the end of the array.
-// If arr[current] = 2 - In this case, we need to push the element towards the end of the array. Again, to do this, we’ll just swap arr[current] and arr[twoPos]. 
+// If arr[current]=1 - In this case, we will just increase the current by 1, since we are only concerned with push 0s to the front and 2s to the end of the array.
+// If arr[current]=2 - In this case, we need to push the element towards the end of the array. Again, to do this, we’ll just swap arr[current] and arr[twoPos]. 
 // We will decrease twoPos by 1. However, in this case, we will not increase the current by 1.
 
 
