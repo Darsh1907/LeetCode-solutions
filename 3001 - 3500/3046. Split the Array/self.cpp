@@ -13,3 +13,12 @@ public:
         return true;
     }
 };
+
+int main() {
+    // Test the isPossibleToSplit function
+    std::vector<int> nums = {1, 2, 3, 4, 5};
+    Solution solution;
+    bool result = solution.isPossibleToSplit(nums);
+    std::cout << "Is it possible to split the array? " << (result ? "Yes" : "No") << std::endl;
+    return 0;
+}
