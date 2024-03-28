@@ -1,3 +1,5 @@
+// Just count the number of 0s, 1s and 2s and update the array.
+
 void sortColors(int* arr, int arrSize) {
     int count0 = 0;
     int count1 = 0;
