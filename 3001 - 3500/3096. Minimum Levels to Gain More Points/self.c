@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 int minimumLevels(int* possible, int possibleSize) {
     int total_sum = 0;
     for(int i=0; i<possibleSize; i++){
@@ -15,4 +17,12 @@ int minimumLevels(int* possible, int possibleSize) {
     }
     if(i==possibleSize) return -1;
     return i;
+}
+
+int main() {
+    int possible[] = {1, 0, 1, 1, 0};
+    int possibleSize = sizeof(possible) / sizeof(possible[0]);
+    int result = minimumLevels(possible, possibleSize);
+    printf("Minimum levels: %d\n", result);
+    return 0;
 }
