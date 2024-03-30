@@ -1,3 +1,6 @@
+#include <stdio.h>
+#include <string.h>
+
 long long countSubstrings(char* s, char c) {
     long long count = 0;
     int n = strlen(s);
@@ -9,4 +12,12 @@ long long countSubstrings(char* s, char c) {
         }
     }
     return count;
+}
+
+int main() {
+    char str[] = "example string";
+    char target = 'e';
+    long long result = countSubstrings(str, target);
+    printf("Number of substrings starting and ending with '%c': %lld\n", target, result);
+    return 0;
 }
