@@ -1,5 +1,9 @@
 // Using resultant string as stack
 
+#include <cmath>
+#include <string>
+using namespace std;
+
 class Solution {
 public:
     string makeGood(string s) {
