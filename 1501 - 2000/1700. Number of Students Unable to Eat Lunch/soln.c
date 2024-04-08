@@ -4,8 +4,7 @@ int countStudents(int* students, int studentsSize, int* sandwiches, int sandwich
     for(int i=0; i<size; i++) counts[students[i]]++;
     int remaining = size;
     for(int i=0; i<size; i++) {
-        if(counts[sandwiches[i]] == 0) break;
-        if(remaining == 0) break;
+        if(counts[sandwiches[i]]==0 || remaining==0) break;
         counts[sandwiches[i]]--;
         remaining--;
     }
