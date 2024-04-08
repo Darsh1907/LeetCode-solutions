@@ -8,7 +8,7 @@ The problem involves tracking the frequency of IDs in a collection that changes 
 
 Return an array `ans` of length `n`, where `ans[i]` represents the **count** of the *most frequent ID* in the collection after the `ith` step. If the collection is empty at any step, `ans[i]` should be 0 for that step.
 
- 
+
 
 Example 1:
 
