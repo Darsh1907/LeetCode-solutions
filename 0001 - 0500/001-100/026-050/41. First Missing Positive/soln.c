@@ -1,7 +1,8 @@
 int firstMissingPositive(int* nums, int numsSize) {
     // Note that the missing positive would only be between [1, nums.size()+1] (neetcode explained)
-    for(int i=0; i<numsSize; i++){
-        if(nums[i]<=0) nums[i]=numsSize+2; // Therefore replacing every non-elgible number by another non-eligible number i.e, numsSize+2
+    for(int i=0; i<numsSize; i++) {
+        // Replacing every non-elgible number by another non-eligible number i.e, numsSize+2
+        if(nums[i]<=0) nums[i]=numsSize+2;
     }
     for(int i=0; i<numsSize; i++) {  // Mark negative in the array for the numbers which are present in the array
         int abs_val = abs(nums[i]);
