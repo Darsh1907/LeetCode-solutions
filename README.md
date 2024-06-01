@@ -7,4 +7,4 @@ TO_REMEMBER:
 
 1. n stacks in a sngle array
 2. n queues in a single array
-4. minStack in O(1) time and O(1) space
+3. minStack in O(1) time and O(1) space
