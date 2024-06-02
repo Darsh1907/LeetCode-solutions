@@ -23,11 +23,7 @@ Once we know a tree of depth X is full, we can count the number of nodes without
 3) Otherwise, count the right subtree with simple math, and recursively call it on the left subtree. <br>
 
 ## Complexity
-- Time complexity: O(logn). At every step, you are disregarding half the tree. Think about it like this: You never wasted time visiting the nodes in the tree you found to be full, except on the left-most path (negligible). Since you shrink the input by half every time, it is logn.
-
-<br>
-
-Technically, the (negligible) portion would make this algorithm (logn)^2, but practically it makes little difference as it operates similarly to log. You can also optimize this by skipping the branch you already computed and adding the depth, but it would make the solution less readable.
+- Time complexity: O(logn). At every step, you are disregarding half the tree. Think about it like this: You never wasted time visiting the nodes in the tree you found to be full, except on the left-most path (negligible). Since you shrink the input by half every time, it is logn. Technically, the (negligible) portion would make this algorithm (logn)^2, but practically it makes little difference as it operates similarly to log. You can also optimize this by skipping the branch you already computed and adding the depth, but it would make the solution less readable.
 
 <br>
 
