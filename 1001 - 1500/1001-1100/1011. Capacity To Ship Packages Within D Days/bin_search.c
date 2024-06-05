@@ -2,6 +2,8 @@
 // This question is similar to the Book Allocation Problem solved 
 // on https://www.youtube.com/watch?v=YTTdLgyqOLY&list=PLDzeHZWIZsTryvtXdMr6rPh4IDexB5NIA&index=15
 
+#include <stdbool.h>
+
 bool isPossible(int* weights, int weightsSize, int days, int mid){
     int dayCount = 1;
     int weightSum = 0;
