@@ -4,7 +4,8 @@ using namespace std;
 
 class Solution {
 public:
-    bool isNStraightHand(std::vector<int>& hand, int groupSize) {
+    bool isNStraightHand(vector<int>& hand, int groupSize) {
+        if(hand.size() % groupSize != 0) return false;
         map<int, int> mp;
         for(int i=0; i<hand.size(); i++) mp[hand[i]]++;
         while(mp.begin()!=mp.end()) {
