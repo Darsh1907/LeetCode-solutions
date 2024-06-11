@@ -15,7 +15,7 @@ public:
             int count = ptr->second;
             while(count--) res.push_back(arr2[i]);
             ptr->second = 0;
-            arr1map.erase(ptr);
+            arr1map.erase(ptr);  // You may or may not keep this line
         }
 
         for(auto i=arr1map.begin(); i!=arr1map.end(); i++) {
