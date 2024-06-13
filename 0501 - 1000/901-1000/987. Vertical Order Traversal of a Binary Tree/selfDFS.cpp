@@ -1,3 +1,5 @@
+// Note: This approach uses DFS. A BFS approach is also possible. The BFS approach is more efficient and is implemented in the BFS.cpp file.
+
 /**
  * Definition for a binary tree node.
  * struct TreeNode {
