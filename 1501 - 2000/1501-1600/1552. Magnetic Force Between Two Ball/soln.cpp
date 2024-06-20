@@ -1,9 +1,13 @@
+#include<vector>
+#include<algorithm>
+using namespace std;
+
 class Solution {
 public:
-    bool isPossible(vector<int> &position, int k, int mid, int n) {
+    bool isPossible(vector<int> &position, int k, int mid, int size) {
         int ballCount = 1;
         int lastPos = position[0];
-        for(int i=0; i<n; i++ ){
+        for(int i=0; i<size; i++ ){
             if(position[i]-lastPos >= mid){
                 ballCount++;
                 if(ballCount==k) return true;
