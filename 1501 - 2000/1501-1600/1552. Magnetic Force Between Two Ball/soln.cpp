@@ -17,7 +17,7 @@ public:
         sort(position.begin(), position.end());
         int s = 0;
         int size = position.size();
-        int e = position[n-1];
+        int e = position[size-1];
         int ans = -1;
         int mid = s + (e-s)/2;
         while(s<=e) {
