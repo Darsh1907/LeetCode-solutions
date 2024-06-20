@@ -1,4 +1,4 @@
-int max(int a, int b){
+int max(int* a, int* b){
     if(a>=b) return a;
     return b;
 }
@@ -38,7 +38,7 @@ int longestValidParentheses(char* s) {
     int len = 0;
     int max_len = 0;
     for(int i=0; i<n; i++) {
-        if(s[i]!='*') len++;
+        if(s[i]!='*') len++; // (If the character is valid)
         else {
             max_len = max(max_len, len);
             len = 0;
