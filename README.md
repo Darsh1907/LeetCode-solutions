@@ -1,7 +1,11 @@
 TODO:
 
-1. 430-Flatten a Multilevel Doubly Linked List
-2. 239-Sliding Window Maximum
+239. Sliding Window Maximum
+430. Flatten a Multilevel Doubly Linked List
+540. Single Element in a Sorted Array
+875. Koko Eating Bananas
+1283. Find the Smallest Divisor Given a Threshold
+1539. Kth Missing Positive Number
 
 TO_REMEMBER:
 
