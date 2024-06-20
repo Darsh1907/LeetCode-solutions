@@ -16,14 +16,12 @@ public:
     int maxDistance(vector<int>& position, int m) {
         sort(position.begin(), position.end());
         int s = 0;
-        int n = position.size();
-        int e=position[n-1];
-
+        int size = position.size();
+        int e = position[n-1];
         int ans = -1;
         int mid = s + (e-s)/2;
-        
         while(s<=e) {
-            if(isPossible(position, m, mid, n)) {
+            if(isPossible(position, m, mid, size)) {
                 ans = mid;
                 s = mid + 1;
             }
