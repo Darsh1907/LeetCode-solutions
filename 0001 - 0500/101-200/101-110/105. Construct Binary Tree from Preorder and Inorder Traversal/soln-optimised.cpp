@@ -20,7 +20,7 @@ private:
         int element = preorder[index++];
         TreeNode* root = new TreeNode(element);
         int position = inorder_map[element];
-        // recursive call
+        // recursive call -> left and then right
         root->left = solve(inorder_map, preorder, index, inorderStart, position-1);
         root->right = solve(inorder_map, preorder, index, position+1, inorderEnd);
         return root;
