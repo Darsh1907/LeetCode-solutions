@@ -30,6 +30,7 @@ public:
         int preorderIndex = 0;
         // Instead of inorder, we will give inorder_map for optimising speed.
         unordered_map<int, int> inorder_map;
+        // Constructing the map
         for(int i=0; i<inorder.size(); i++) inorder_map[inorder[i]] = i;
         TreeNode* ans = solve(inorder_map, preorder, preorderIndex, 0, preorder.size()-1);
         return ans;
