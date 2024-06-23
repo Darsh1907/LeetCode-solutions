@@ -1,3 +1,5 @@
+// Reference: NeetCode - https://www.youtube.com/watch?v=ZI2z5pq0TqA
+
 int max(int a,int b) {if(a>=b) return a; return b;}
 
 int trap(int* height, int heightSize) {
