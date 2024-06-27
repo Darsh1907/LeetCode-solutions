@@ -25,7 +25,7 @@ public:
         if(root == nullptr) return;
         TreeNode* current = root;
         while(current != nullptr){
-            if(current->left){
+            if(current->left) {
                 TreeNode* prev = current->left;
                 while(prev->right) prev = prev->right;
                 prev->right = current->right;
