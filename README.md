@@ -1,6 +1,7 @@
 TODO:
 
 239. Sliding Window Maximum
+297. Serialize and Deserialize Binary Tree
 430. Flatten a Multilevel Doubly Linked List
 540. Single Element in a Sorted Array
 875. Koko Eating Bananas
