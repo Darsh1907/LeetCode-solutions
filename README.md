@@ -7,6 +7,7 @@ TODO:
 875. Koko Eating Bananas
 1283. Find the Smallest Divisor Given a Threshold
 1539. Kth Missing Positive Number
+2192. All Ancestors of a Node in a Directed Acyclic Graph
 
 TO_REMEMBER:
 
