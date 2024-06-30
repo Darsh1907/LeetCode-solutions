@@ -1,31 +1,6 @@
 int max(int a, int b) {if(a>=b) return a; return b;}
 
-// If the first node is blue
-int getmaxHeightBlue(int red, int blue) {
-    int res = 0;
-    int currRed = 0;
-    int totakeRed = 2;
-    int totakeBlue = 1;
-    int currBlue = 0;
-    while(1){
-        if(currBlue+totakeBlue <= blue) {
-            currBlue += totakeBlue;
-            totakeBlue += 2;
-            res++;
-        }
-        else break;
-        if(currRed+totakeRed <= red) {
-            currRed += totakeRed;
-            totakeRed += 2;
-            res++;
-        }
-        else break;
-    }
-    return res;
-}
-
-// If the first node is red
-int getmaxHeightRed(int red, int blue) {
+int getmaxHeight(int red, int blue) {
     int res = 0;
     int currRed = 0;
     int totakeRed = 1;
@@ -49,8 +24,8 @@ int getmaxHeightRed(int red, int blue) {
 }
 
 int maxHeightOfTriangle(int red, int blue) {
-    if(red==blue) return getmaxHeightRed(red, blue);
-    int maxHeightRed = getmaxHeightRed(red, blue);
-    int maxHeightBlue = getmaxHeightBlue(red, blue);
+    if(red==blue) return getmaxHeight(red, blue);
+    int maxHeightRed = getmaxHeight(red, blue);
+    int maxHeightBlue = getmaxHeight(blue, red); // considering blue as red and red as blue to get the maximum height of the triangle with blue as root
     return max(maxHeightRed, maxHeightBlue);
 }
