@@ -25,7 +25,7 @@ int getmaxHeight(int red, int blue) {
 
 int maxHeightOfTriangle(int red, int blue) {
     if(red==blue) return getmaxHeight(red, blue);
-    int maxHeightRed = getmaxHeight(red, blue);
+    int maxHeightRed = getmaxHeight(red, blue); // get maximum height possible considering red as root node
     int maxHeightBlue = getmaxHeight(blue, red); // considering blue as red and red as blue to get the maximum height of the triangle with blue as root
     return max(maxHeightRed, maxHeightBlue);
 }
