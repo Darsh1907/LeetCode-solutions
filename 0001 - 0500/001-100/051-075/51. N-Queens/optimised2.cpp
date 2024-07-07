@@ -25,11 +25,14 @@ public:
     }
 
     vector<vector<string>> solveNQueens(int n) {
+        // initialise the answer vector and the board
         vector<vector<string>> ans;
         vector<string> board(n, string(n, '.'));
 
-        vector<int> left_row(n, 0), lower_diagonal(2*n - 1, 0), upper_diagonal(2*n - 1, 0);
+        // initialise the vectors
+        vector<int> left_row(n, 0), lower_diagonal(2*n-1, 0), upper_diagonal(2*n-1, 0);
         
+        // call the recursive function
         solve(0, board, ans, left_row, lower_diagonal, upper_diagonal, n);
 
         return ans;
