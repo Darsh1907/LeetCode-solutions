@@ -1,3 +1,5 @@
+// Didnt understand this solution
+
 // Intuition
 // You can exchange numExchange empty water bottles from the market with one full water bottle. 
 // In the other words, if you have (numExchange-1) empty water bottles, you can borrow one full water bottle 
