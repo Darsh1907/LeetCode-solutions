@@ -5,9 +5,12 @@ public:
         int mid = total>>1; // total/2
         int mid_ele, pre_mid_ele;
         int count=0, p=0, q=0;
-        while(count<=mid && p<nums1.size() && q<nums2.size()){
-            if(nums1[p]<nums2[q]){
-                if(count>=mid-1){
+        // Add elements until any one of the array is exhausted
+        while(count<=mid && p<nums1.size() && q<nums2.size()) {
+            // Add the smaller element
+            if(nums1[p]<nums2[q]) {
+                // If we have reached the mid element
+                if(count>=mid-1) {
                     if(count==mid-1) pre_mid_ele = nums1[p];
                     else mid_ele = nums1[p];
                 }
@@ -15,7 +18,8 @@ public:
                 p++;
             }
             else {
-                if(count>=mid-1){
+                // If we have reached the mid element
+                if(count>=mid-1) {
                     if(count==mid-1) pre_mid_ele = nums2[q];
                     else mid_ele = nums2[q];
                 }
@@ -23,15 +27,19 @@ public:
                 q++;
             }
         }
+        // Add remaining elements from nums1 (if exists)
         while(count<=mid && p<nums1.size()){
-            if(count>=mid-1){
+            // If we have reached the mid element
+            if(count>=mid-1) {
                 if(count==mid-1) pre_mid_ele = nums1[p];
                 else mid_ele = nums1[p];
             }
             count++;
             p++;
         }
+        // Add remaining elements from nums2 (if exists)
         while(count<=mid && q<nums2.size()){
+            // If we have reached the mid element
             if(count>=mid-1){
                 if(count==mid-1) pre_mid_ele = nums2[q];
                 else mid_ele = nums2[q];
