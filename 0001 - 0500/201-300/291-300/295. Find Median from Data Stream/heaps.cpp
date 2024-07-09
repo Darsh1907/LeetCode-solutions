@@ -1,8 +1,5 @@
-# include<queue>
-
-using namespace std;
-
-// Logic is that we will keep two heaps. A max heap (for the left side elements) and a min heap (for the right side elements)
+// Logic is that we will keep two heaps. 
+// A max heap (for the left side elements) and a min heap (for the right side elements)
 
 class MedianFinder {
 public:
