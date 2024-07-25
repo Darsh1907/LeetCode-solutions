@@ -8,7 +8,7 @@ TODO:
 1539. Kth Missing Positive Number
 2192. All Ancestors of a Node in a Directed Acyclic Graph
 
-TO_REMEMBER:
+SPECIAL:
 
 1. n stacks in a sngle array
 2. n queues in a single array
