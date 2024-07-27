@@ -14,8 +14,7 @@ public:
     }
 
     int findUPar(int node) {
-        if (node == parent[node])
-            return node;
+        if (node == parent[node]) return node;
         return parent[node] = findUPar(parent[node]);
     }
 
@@ -23,12 +22,8 @@ public:
         int ulp_u = findUPar(u);
         int ulp_v = findUPar(v);
         if (ulp_u == ulp_v) return;
-        if (rank[ulp_u] < rank[ulp_v]) {
-            parent[ulp_u] = ulp_v;
-        }
-        else if (rank[ulp_v] < rank[ulp_u]) {
-            parent[ulp_v] = ulp_u;
-        }
+        if (rank[ulp_u] < rank[ulp_v]) parent[ulp_u] = ulp_v;
+        else if (rank[ulp_v] < rank[ulp_u]) parent[ulp_v] = ulp_u;
         else {
             parent[ulp_v] = ulp_u;
             rank[ulp_u]++;
@@ -56,7 +51,6 @@ public:
         vector<vector<string>>& details = accounts;
         int n = details.size();
         DisjointSet ds(n);
-        sort(details.begin(), details.end());
         unordered_map<string, int> mapMailNode;
         for (int i = 0; i < n; i++) {
             for (int j = 1; j < details[i].size(); j++) {
