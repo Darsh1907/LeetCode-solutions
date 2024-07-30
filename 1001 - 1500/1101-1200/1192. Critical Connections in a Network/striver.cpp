@@ -30,7 +30,7 @@ public:
         }
         vector<bool> vis(n, false);
         vector<int> tin(n); // time of insertion
-        vector<int> low(n); // lowest time of insertion apart from the parent
+        vector<int> low(n); // minimum tin from all adjacent nodes apart from parent (It shows the recheability of a node)
         vector<vector<int>> bridges; // to store bridges
         // start dfs
         dfs(0, -1, vis, adj, tin, low, bridges);
