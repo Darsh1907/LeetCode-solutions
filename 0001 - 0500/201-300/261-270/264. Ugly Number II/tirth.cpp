@@ -3,6 +3,8 @@
 // Hint3: The key is how to maintain the order of the ugly numbers. Try a similar approach of merging from three sorted lists: L1, L2, and L3.
 // Hint4: Assume you have Uk, the kth ugly number. Then Uk+1 must be Min(L1 * 2, L2 * 3, L3 * 5).
 
+// https://www.youtube.com/watch?v=1pj2a5bmziY
+
 class Solution {
 public:
     int nthUglyNumber(int n) {
