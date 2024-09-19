@@ -1,0 +1,10 @@
+# 1824. Minimum Sideway Jumps
+## (Medium)
+
+![alt text]({824DDA9E-3255-4650-9CA2-508C24C8A803}.png)
+
+![alt text]({22F0C778-E59F-4008-9338-1DDBC8313D3C}.png)
+
+![alt text]({A6C2EB26-4127-4A3C-87A9-A52925D86304}.png)
+
+![alt text]({432D5967-41D6-480A-8926-327FE7E9723A}.png)
