@@ -1,5 +1,5 @@
 /*
-Let's take some good exampes :
+Let's take some good examples :
 number->binary form
 3->0000 0011
 4->0000 0100
