@@ -1,0 +1,2 @@
+# 3606. Coupon Code Validator
+## (Easy)
