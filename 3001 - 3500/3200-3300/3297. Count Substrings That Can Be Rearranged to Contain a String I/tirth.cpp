@@ -18,7 +18,7 @@ public:
         for (int right = 0; right < n; right++) {
             current[word1[right] - 'a']++;
             while(left<=right && isValid(current, target)) { // if the substring has all valid chars
-                result += n - right; // count all possible number of substrings possible within that substrings
+                result += n - right; // if this substring is allowed, all the other substrings with the same left are also allowed
                 current[word1[left] - 'a']--; // move left
                 left++;
             }
